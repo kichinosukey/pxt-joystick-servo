@@ -1,17 +1,3 @@
-/**
- * ジョイスティックでサーボモータを制御するための拡張機能
- * 
- * micro:bit V2ピン配置の考慮事項:
- * - アナログ入力として使用可能なピン: 
- *   - LED干渉なし: P0, P1, P2
- *   - LED干渉あり: P3, P4, P10
- * - デジタル出力（サーボ制御用）:
- *   - LED干渉なし: P8, P9, P12, P16
- * - P5とP11はボタンA/Bと共有されることに注意
- */
-
-//% weight=100 color=#0fbc11 icon="\uf1b0" block="JoystickServo"
-//% groups="['初期設定', 'サーボ制御', 'イベント']"
 namespace joystick_servo {
     // 内部変数
     let _joystickXPin: AnalogPin = null;
