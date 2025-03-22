@@ -48,12 +48,12 @@ namespace joystick_servo {
      * @param servoYPin Y軸サーボのピン設定 (推奨: P12, P16)
      */
     //% blockId=joystick_servo_init
-    //% block="ジョイスティックサーボを初期化"
+    //% block="ジョイスティックサーボを初期化 X軸 %joystickXPin Y軸 %joystickYPin ボタン %buttonPin サーボX %servoXPin サーボY %servoYPin"
     //% joystickXPin.defl=AnalogPin.P0
     //% joystickYPin.defl=AnalogPin.P1
-    //% buttonPin.defl=DigitalPin.P8
-    //% servoXPin.defl=AnalogPin.P12
-    //% servoYPin.defl=AnalogPin.P16
+    //% servoXPin.defl=AnalogPin.P2
+    //% servoYPin.defl=AnalogPin.P3
+    //% buttonPin.defl=DigitalPin.P4
     //% group="初期設定"
     //% weight=100
     export function init(
